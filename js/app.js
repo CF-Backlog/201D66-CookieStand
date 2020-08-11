@@ -24,33 +24,34 @@ var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2p
 
 for ( var i = 0 ; i < hoursArray.length ; i++) {
 console.log(hoursArray[i]);
-// }
-
-var seattle = {
-  location : 'Seattle',
-  minCustomer : 23 ,
-  maxCustomer : 65 ,
-  avgCookieSale : 6.3,
-  
-  cookie : function(){
-    var oneHourCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale;
-    return oneHourCookie
-  } 
-
-} 
 
 
-  // var cookieDay = { 
-  
-  // cookie : function(){
-  //   this.allTheCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale,
-  //   return allTheCookie
-  //   } 
-  // }
+    var seattle = {
+      location : 'Seattle',
+      minCustomer : 23 ,
+      maxCustomer : 65 ,
+      avgCookieSale : 6.3,
+      
+      cookie : function(){
+        var oneHourCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale;
+        return oneHourCookie
+      } 
 
-  // for ( var i = 0 ; i < 14 ; i++) {
-  //   console.log(cookies[i]);
+    } 
 
+
+    var cookieDay = { 
+    
+      cookie : function(){
+        this.allTheCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale,
+        return allTheCookie
+      }  
+    }
+
+    for ( var i = 0 ; i < 14 ; i++) {
+      console.log(cookies[i]);
+
+    }
 }
 // write another method
 // to call cookie method once for each hour = 14 times
@@ -61,6 +62,8 @@ function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min; 
+  
+  
   //The maximum is inclusive and the minimum is inclusive 
 }///////math.random////////
 
@@ -104,4 +107,4 @@ function getRandomIntInclusive(min, max) {
 
 
 
-//While the getRandomInt() function above is inclusive at the minimum, it's exclusive at the maximum. What if you need the results to be inclusive at both the minimum and the maximum? The getRandomIntInclusive() function below accomplishes that.
+//While the getRandomInt() function above is inclusive at the minimum, it's exclusive at the maximum. What if you need the results to be inclusive at both the minimum and the maximum? The getRandomIntInclusive() function below accomplishes that
