@@ -20,25 +20,79 @@ console.log('working on sales');
 //     * 7pm: 57 cookies
 //     * Total: 875 cookies
 
+// ===================Stores=====================
+
+// ==============all the stores==================
+// var winkeltjes = function(location, min, max, avrg) {
+//   this.location = locaton;
+//   this.min = min;
+//   this.max = max;
+//   this.avrg = avrg;
+  
+//   this.cookieSimulator = [];
+//   this.custPerHour = function(){
+//     return Math.floor(((Math.random() * (this.max - this.min)) + this.min) * this.avrg);
+//   }
+// }
+
+// var winkeltjesArray = new Array();
+// storesArray.push(new winkeltjes('Tokyo', 3, 24, 1.2));
+// ===============================================
+
+var Seattle = {
+  location : 'Seattle',
+  minCustomer : 23,
+  maxCustomer : 65,
+  avgCookieSale : 6.3,
+}      
+
+var Tokyo = {
+  location : 'Tokyo',
+  minCustomer : 3,
+  maxCustomer : 24,
+  avgCookieSale :1.2,
+}  
+
+var Dubai = {
+  location : 'Dubai',
+  minCustomer :11,
+  maxCustomer :38,
+  avgCookieSale :3.7,
+}  
+
+var Paris = {
+  location : 'Paris',
+  minCustomer :20,
+  maxCustomer :38,
+  avgCookieSale :2.3,
+}  
+
+var Lima = {
+  location : 'Lima',
+  minCustomer :2,
+  maxCustomer :16,
+  avgCookieSale :4.6,
+}  
+
+return Lima;
+return Dubai;
+return Paris;
+return Tokyo;
+return Seattle;
+
+//   cookie : function(){
+//     var oneHourCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale;
+//     return oneHourCookie
+//     } 
+
+// } 
+// seattle.render();
+
+// ====================== opening hours array? =====================================
 var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-for ( var i = 0 ; i < hoursArray.length ; i++) {
+for ( var i = 0 ; i < hoursArray.length ; i++) 
 console.log(hoursArray[i]);
-
-
-    var seattle = {
-      location : 'Seattle',
-      minCustomer : 23 ,
-      maxCustomer : 65 ,
-      avgCookieSale : 6.3,
-      
-      cookie : function(){
-        var oneHourCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale;
-        return oneHourCookie
-      } 
-
-    } 
-
 
     var cookieDay = { 
     
@@ -52,7 +106,7 @@ console.log(hoursArray[i]);
       console.log(cookies[i]);
 
     }
-}
+
 // write another method
 // to call cookie method once for each hour = 14 times
 
