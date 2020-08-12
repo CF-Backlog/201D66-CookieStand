@@ -44,7 +44,8 @@ var Seattle = {
   minCustomer : 23,
   maxCustomer : 65,
   avgCookieSale : 6.3,
-}      
+} 
+     
 
 var Tokyo = {
   location : 'Tokyo',
@@ -60,7 +61,7 @@ var Dubai = {
   avgCookieSale :3.7,
 }  
 
-var Paris = {
+var Paris = {  
   location : 'Paris',
   minCustomer :20,
   maxCustomer :38,
@@ -74,10 +75,10 @@ var Lima = {
   avgCookieSale :4.6,
 }  
 
-return Lima;
-return Dubai;
-return Paris;
-return Tokyo;
+// return Lima;
+// return Dubai;
+// return Paris;
+// return Tokyo;
 return Seattle;
 
 //   cookie : function(){
@@ -94,18 +95,18 @@ var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2p
 for ( var i = 0 ; i < hoursArray.length ; i++) 
 console.log(hoursArray[i]);
 
-    var cookieDay = { 
+    // var cookieDay = { 
     
-      cookie : function(){
-        this.allTheCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale,
-        return allTheCookie
-      }  
-    }
+    //   cookie : function(){
+    //     this.allTheCookie = getRandomIntInclusive(this.minCustomer, this.maxCustomer) * this.avgCookieSale,
+    //     return allTheCookie
+    //   }  
+    // }
 
-    for ( var i = 0 ; i < 14 ; i++) {
-      console.log(cookies[i]);
+    // for ( var i = 0 ; i < 14 ; i++) {
+    //   console.log(cookies[i]);
 
-    }
+    // }
 
 // write another method
 // to call cookie method once for each hour = 14 times
@@ -113,9 +114,10 @@ console.log(hoursArray[i]);
 // for each of the 14 times a number is generated, make a bullet on a list
 
 function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+  // min = Math.ceil(min);
+  // max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min; 
+  // min max ceil floor not relevant yet
   
   
   //The maximum is inclusive and the minimum is inclusive 
